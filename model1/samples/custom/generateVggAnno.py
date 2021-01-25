@@ -341,5 +341,5 @@ for file_name in file_names:
         print("Hata var: ", file_name)
         print(err)
 
-with open('via_region_dataAll.json', 'w') as outfile:
+with open('custom_dataset_annotations.json', 'w') as outfile:
     json.dump(annotations, outfile, indent=4)
