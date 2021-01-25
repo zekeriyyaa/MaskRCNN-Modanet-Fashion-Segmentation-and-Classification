@@ -79,6 +79,10 @@ Each polygon (bounding box, segmentation mask) annotation is assigned to one of 
 ### Train Model-1 using Modanet Dataset
 Our custom [training](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/model1/samples/custom/trainModaNet.py) and [test](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/model1/samples/custom/testModaNet.py) files is located into given folder as link. You can start to training without any pretrained model as give model parameter as ```--model=coco``` . In this way, the coco weighted model will downloaded automatically. In other option is use own model.
 
+[![](https://img.shields.io/badge/keras-2.3.1-blue)](https://github.com/keras-team/keras/releases)
+[![](https://img.shields.io/badge/tensorflow-1.15.2-blue)](https://www.tensorflow.org/install/pip)
+
+
 You can run command directly from the command line as such:
 ```
 # Train a new model starting from pre-trained COCO weights
