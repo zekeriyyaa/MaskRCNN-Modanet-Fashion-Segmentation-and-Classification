@@ -5,6 +5,8 @@ The purpose of this project is classification of clothes under season. There are
 2. Training Model-2 from Custom Dataset
 3. Evaluate test results
 
+![](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/SystemArchitecture.PNG)
+
 For training the model, it is needed to labeled images but our custom dataset is not labeled. There are so many image to label and **we do not want to waste time for it**. The our idea which can handle this issue is use prelabeled fashion dataset to train a model. And then, our custom dataset is given as input into produced model and got segmentation of clothes as result. From this segmentation result's mask, the labels are produces for each clothes in each images.
 
 In this way, the labels are produced by automatically from using model1. After that, our custom dataset's labels is ready to train for classification of season.
@@ -95,6 +97,9 @@ python3 testModaNet.py
 
 You can access our trained model [mask_rcnn_Modanet.h5](https://drive.google.com/file/d/1owRR3PknEijxBVYsDhGRT6IcXQxl8XtS/view?usp=sharing) (~244MB) and must be located it [model1](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/tree/main/model1) as mask_rcnn_Modanet.h5 .
 
+### Segmentation Results
+Sample segmentation result is shown as below: 
+![](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/segmentationResult.PNG)
 
 ### Generate Custom Dataset's Labels
 Our custom dataset was passing into trained model **mask_rcnn_Modanet.h5** as input. As a result, we got segmentation of clothes. The segmentation result has mask of segmented clothes and their class ID. Using this mask we produced detected clothes's boundaries and their labels as vgg annotation type. This is how we can handle the issue which is already talked above as our unlabel dataset.
@@ -157,6 +162,7 @@ You can run the evaluation code with:
 python3 testSeason.py
 ```
 
+### Compare Model-1 and Model-2 Results
 
 
 
