@@ -166,8 +166,7 @@ python3 testSeason.py
 Model-1 Outputs            |  Model-2 Outputs
 :-------------------------:|:-------------------------:
 ![](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/outputs/bag_4mev_112_model1.png)  |  ![](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/outputs/bag_4mev_112_model2.png)
-
-
+:-------------------------:|:-------------------------:
 ![](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/outputs/bag_4mev_129_model1.png) | ![](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/outputs/bag_4mev_129_model2.png)
 
 
