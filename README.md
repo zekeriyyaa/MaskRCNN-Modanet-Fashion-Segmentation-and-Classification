@@ -1,7 +1,9 @@
 # MaskRCNN-Modanet-Fashion-Segmentation-and-Classification
 With the contributions of [Sergen](https://github.com/SergenAsik) and [Murat](https://github.com/MuratYavuzz).
 
-The purpose of this project is classification of clothes under season. There are three main subprocess exist as given below:
+The project aims to classify the clothes in terms of its type (shirt, tshirt, pant etc.) and season (summer, winter etc.) simultaneously. Initially, image segmentation was applied to images to get clothes types and their boundaries. Then, the annotations of clothes were generated from boundaries and fed into the image classification model. Concequently, images were classified as skirt_summer, pant_spring, tshirt_autumn etc.
+
+There are three main subprocess exist as given below:
 1. Training Model-1 from Modanet Dataset and Generate Custom Dataset's Labels
 2. Training Model-2 from Custom Dataset
 3. Evaluate test results
