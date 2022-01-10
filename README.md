@@ -7,7 +7,7 @@ There are three main subprocess exist as given below:
 1. Training Model-1 from Modanet Dataset and Generate Custom Dataset's Labels
 2. Training Model-2 from Custom Dataset
 3. Evaluate test results
-
+ 
 ![](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/SystemArchitecture.PNG)
 
 For training the model, it is needed to labeled images but our custom dataset is not labeled. There are so many image to label and **we do not want to waste time for it**. The our idea which can handle this issue is use prelabeled fashion dataset to train a model. And then, our custom dataset is given as input into produced model and got segmentation of clothes as result. From this segmentation result's mask, the labels are produces for each clothes in each images.
