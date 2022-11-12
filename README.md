@@ -104,8 +104,6 @@ You can also run the evaluation code with:
 python3 testModaNet.py
 ```
 
-You can access our trained model [mask_rcnn_Modanet.h5](https://drive.google.com/file/d/1XEg4wqdz1G4yTcjeakBUh22YDw8Jf3f4/view?usp=sharing) (~244MB) and must be located it [model1](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/tree/main/model1) as mask_rcnn_Modanet.h5 .
-
 ### Segmentation Results
 Sample segmentation result is shown as below: 
 ![](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/blob/main/segmentationResult.PNG)
@@ -159,8 +157,6 @@ python3 model2/samples/custom/trainSeasonData.py train --dataset=/path/to/coco/ 
 # For our model
 python3 model2/samples/custom/trainSeasonData.py train --dataset=/path/to/coco/ --model=mask_rcnn_Modanet.h5
 ```
-
-You can access our trained model [mask_rcnn_Season.h5](https://drive.google.com/file/d/1V-SOJiEyIdidsY_1r8SQ8JS-vQqVH5Fi/view?usp=sharing) (~244MB) and must be located it [model2](https://github.com/zekeriyyaa/MaskRCNN-Modanet-Fashion-Segmentation-and-Classification/tree/main/model2) as mask_rcnn_Season.h5 .
 
 ## 3. Evaluate test results
 After the training of model-2 from custom dataset, the **mask_rcnn_Modanet.h5** is produced as result. And now using this model, we can get seasons of clothes from given images as input.
